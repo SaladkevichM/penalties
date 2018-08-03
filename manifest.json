@@ -1,0 +1,24 @@
+{
+    "name": "Штрафы ГАИ",
+    "description" : "Штрафы ГАИ",
+    "permissions": ["declarativeContent","storage","http://mvd.gov.by/Ajax.asmx/GetExt"],
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "main.html",
+      "default_icon": "pic.png"
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Штрафы ГАИ"
+      }
+    },
+    "background": {
+      "scripts": ["main.js"],
+      "persistent": false
+    }
+  }
